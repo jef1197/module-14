@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ['name'],
+          attributes: ['username'],
         }
       ]
     });
@@ -30,18 +30,27 @@ router.get('/post/:id', async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ['name'],
-        },
-        {
-          model: Comment,
+          attributes: ['username'],
         }
+      ]
+    });
+    const commentData = await Comment.findAll({
+      where: {
+        post_id: req.params.id,
+      },
+      include: [
+        {
+          model: User,
+          attributes: ['username'],
+        },
       ]
     });
 
     const post = postData.get({ plain: true });
-    
+    const comments = commentData.map((comment) => comment.get({ plain:true }));
     res.render('blog', {
       ...post,
+      comments,
       logged_in: req.session.logged_in
     })
   } catch (err) {
