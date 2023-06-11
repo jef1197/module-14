@@ -23,7 +23,7 @@ const newFormHandler = async (event) => {
 };
 
 const delButtonHandler = async (event) => {
-  if (event.target.hasAttribute('data-id')) {
+  if (event.target.id === 'deleteBtn' ) {
     const id = event.target.getAttribute('data-id');
 
     const response = await fetch(`/api/posts/${id}`, {
@@ -35,9 +35,24 @@ const delButtonHandler = async (event) => {
     } else {
       alert('Failed to delete post');
     }
+  } else if (event.target.id === 'updateBtn') {
+    document.location.replace('/update');
   }
 };
+
+const newPost = () => {
+  let form = document.querySelector('.form-container');
+  form.classList.remove("hidden");
+  document.querySelector('#newPost').classList.add('hidden')
+}
 
 document.querySelector('.new-post-form').addEventListener('submit', newFormHandler);
 
 document.querySelector('.post-list').addEventListener('click', delButtonHandler);
+
+document.querySelector('#newPost').addEventListener('click', newPost);
+document.querySelector('#cancel-form').addEventListener('click', () => {
+  let form = document.querySelector('.form-container');
+  form.classList.add("hidden");
+  document.querySelector('#newPost').classList.remove('hidden')
+});
