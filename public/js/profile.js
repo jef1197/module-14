@@ -35,9 +35,7 @@ const delButtonHandler = async (event) => {
     } else {
       alert('Failed to delete post');
     }
-  } else if (event.target.id === 'updateBtn') {
-    document.location.replace('/update');
-  }
+  } 
 };
 
 const newPost = () => {

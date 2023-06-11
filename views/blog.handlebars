@@ -10,7 +10,9 @@
         <p>{{comment.date}}</p>
     </div>
   {{/each}}
-  <button class="btn btn-info" id="addComments"> + Add Comment</button>
+  {{#if logged_in}}
+    <button class="btn btn-info" id="addComments"> + Add Comment</button>
+  {{/if}}
   <div class="comment-container hidden">
     <form class="form new-comment-form">
       <div class="form-group">

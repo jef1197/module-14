@@ -2,17 +2,17 @@
   <form class="form new-put-form">
     <div class="form-group">
       <label for="put-title">Title: </label>
-      <input class="form-input" type="text" id="put-title" name="put-title" />
+      <input class="form-input" type="text" id="put-title" name="put-title" value="{{title}}"/>
     </div>
     <div class="form-group">
       <label for="put-content">Content:</label>
-      <input class="form-input" type="text" id="put-content" name="put-content" />
+      <input class="form-input" type="text" id="put-content" name="put-content"  value="{{content}}"/>
     </div>
     <div class="form-group">
-      <button type="submit" class="btn btn-primary">Create</button>
-      <button type="button" id="cancel-form" class="btn btn-secondary">Cancel</button>
+      <button type="submit" class="btn btn-primary">Update</button>
+      <a type="button" href="/profile" id="cancel-form" class="btn btn-secondary">Cancel</a>
     </div>
   </form>
 </div>
 
-<script src="./js/update.js"></script>
+<script src="../js/update.js"></script>
