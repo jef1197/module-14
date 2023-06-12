@@ -31,11 +31,8 @@ nav a {
   margin-left: -5px;
 }
 
-.hidden {
-  display: none;
-}
-
-.post-container, .login-form, .signup-form {
+.post-container, .login-form, 
+.signup-form, .post-list, .form-container {
   border-radius: 15px;
   padding: 20px;
   box-shadow: 5px 10px 0.75rem 4px grey;
@@ -54,9 +51,18 @@ nav a {
   box-shadow: 5px 10px 0.75rem 4px grey;
 }
 
-.comment-card {
+.comment-card, .post-card {
   border-radius: 15px;
   padding: 15px;
   border: 1px solid rgb(206, 206, 206);
   margin-bottom: 10px;
+}
+
+.post-btn {
+  margin: 50px auto;
+  display: block; 
+}
+
+.hidden {
+  display: none;
 }

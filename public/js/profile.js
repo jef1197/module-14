@@ -40,8 +40,12 @@ const delButtonHandler = async (event) => {
 
 const newPost = () => {
   let form = document.querySelector('.form-container');
+  let postList = document.querySelector('.post-list');
+  let postBtn = document.querySelector('#newPost');
+
+  postList.classList.add('hidden');
   form.classList.remove("hidden");
-  document.querySelector('#newPost').classList.add('hidden')
+  postBtn.classList.add('hidden');
 }
 
 document.querySelector('.new-post-form').addEventListener('submit', newFormHandler);
@@ -49,8 +53,13 @@ document.querySelector('.new-post-form').addEventListener('submit', newFormHandl
 document.querySelector('.post-list').addEventListener('click', delButtonHandler);
 
 document.querySelector('#newPost').addEventListener('click', newPost);
+
 document.querySelector('#cancel-form').addEventListener('click', () => {
   let form = document.querySelector('.form-container');
+  let postList = document.querySelector('.post-list');
+  let postBtn = document.querySelector('#newPost');
+
+  postList.classList.remove('hidden');
   form.classList.add("hidden");
-  document.querySelector('#newPost').classList.remove('hidden')
+  postBtn.classList.remove('hidden')
 });

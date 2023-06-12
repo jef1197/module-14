@@ -5,8 +5,8 @@
     <h2>
       <a href="/post/{{post.id}}">{{post.title}}</a>
     </h2>
-    <p>{{post.user.username}}</p>
-    <p>{{post.date}}</p>
+    <b>{{post.user.username}}</b>
+    <p>{{format_date post.date}}</p>
   </div>
   <div class="col-md-7 post-content">
     <p>

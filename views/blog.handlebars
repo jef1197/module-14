@@ -1,7 +1,8 @@
 <div class=" post-container">
   <h2>{{title}}</h2>
   <p>{{content}}</p>
-  <p>By {{user.username}} on {{date}}</p>
+  <b>{{user.username}}</b>
+  <p>{{format_date date}}</p>
 </div>
 
 <div class="comment-list">
@@ -9,7 +10,7 @@
 {{#each comments as |comment|}}
   <div class="comment-card">
       <p>{{comment.content}}</p>
-      <p>{{comment.user.username}} {{comment.date}}</p>
+      <p><b>{{comment.user.username}}</b> {{ format_date comment.date}}</p>
       <p></p>
   </div>
 {{/each}}
