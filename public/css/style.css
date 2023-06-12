@@ -2,6 +2,14 @@ header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
+nav {
+  margin-right: 30px;
+}
+
+nav a {
+  margin-right: 20px;
+}
+
 .no-button {
   background: none;
   border: none;
@@ -25,4 +33,30 @@ header, .project:not(:last-child) {
 
 .hidden {
   display: none;
+}
+
+.post-container, .login-form, .signup-form {
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 5px 10px 0.75rem 4px grey;
+}
+
+.post-content {
+  border-radius: 15px;
+  padding: 15px;
+  border: 1px solid rgb(206, 206, 206);
+}
+
+.comment-list {
+  margin-top: 50px;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 5px 10px 0.75rem 4px grey;
+}
+
+.comment-card {
+  border-radius: 15px;
+  padding: 15px;
+  border: 1px solid rgb(206, 206, 206);
+  margin-bottom: 10px;
 }

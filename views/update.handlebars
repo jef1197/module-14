@@ -1,4 +1,5 @@
-<div>
+<div class="post-container">
+  <h2>Update</h2>
   <form class="form new-put-form">
     <div class="form-group">
       <label for="put-title">Title: </label>
@@ -6,7 +7,7 @@
     </div>
     <div class="form-group">
       <label for="put-content">Content:</label>
-      <input class="form-input" type="text" id="put-content" name="put-content"  value="{{content}}"/>
+      <textarea rows="4" class="form-input" id="post-content" name="post-content">{{content}}</textarea>
     </div>
     <div class="form-group">
       <button type="submit" class="btn btn-primary">Update</button>
