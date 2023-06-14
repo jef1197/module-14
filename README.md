@@ -1,4 +1,4 @@
-# Product Database Tracker
+# Smart BlogsJO
 
 ## Description
 
@@ -7,8 +7,6 @@ This is the Module 14 Challenge for the boot camp. The project has been built fr
 Link to Deployment: 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-Link to Deployment: 
 
 ## Usage
 
