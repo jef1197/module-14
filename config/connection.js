@@ -26,18 +26,6 @@ let sequelize = new Sequelize(DB_NAME, DB_USER, DB_PASSWORD, {
   host: DB_HOST,
   dialect: 'postgres',
   logging: false,
-})
-
-export const sequelizeConnection = async () => {
-  try {
-    sequelize
-      .authenticate()
-      .then(() => {
-        console.log('Postgres connection has been established successfully.')
-      })
-  } catch (error) {
-    console.error('Unable to connect to the database:', error)
-  }
-}
+});
 
 module.exports = sequelize;
