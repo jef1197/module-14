@@ -8,8 +8,6 @@ Link to Deployment:
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Link to Deployment: 
-
 ## Usage
 
 1. User is taken to landing page showing list of blog post
