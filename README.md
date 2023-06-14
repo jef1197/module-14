@@ -1,4 +1,4 @@
-# Product Database Tracker
+# Smart BlogsJO
 
 ## Description
 
