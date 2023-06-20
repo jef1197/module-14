@@ -4,7 +4,7 @@
 
 This is the Module 14 Challenge for the boot camp. The project has been built from scratch. The website is a simple bloggin site which allows the use to post blogs, add comments, update their blogs, and delete their blogs. Users will be able to create thier own accounts using a username and password. Once they have logged in they will be able to create post as well as comment on any existing post.
 
-Link to Deployment: 
+Link to Deployment: https://smart-blog-jo.herokuapp.com/
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
